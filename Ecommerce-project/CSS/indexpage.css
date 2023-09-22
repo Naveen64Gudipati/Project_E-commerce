@@ -288,10 +288,12 @@
 /* section 7 */
 .mainsection7{
     position: relative;
-    margin: 20px 5px 20px 5px;
+    margin: 20px 10px 20px 30px;
+    width: fit-content;
 }
 .imgsection7 img{
-    width: 1250px;
+    width: 1200px;
+    position: relative;
 }
 .deatilssection7{
     color: white;
@@ -303,6 +305,7 @@
     padding: 50px;
     text-align: center;
     font-size: xx-large;
+    position: absolute;
 }
 .deatilssection7 a{
     font-size: large;
@@ -363,6 +366,10 @@
 .submainsection8 label{
     color: rgb(165, 165, 165);
 }
+.checkbox{
+    accent-color: rgb(143, 143, 143);
+}
+
 
 /* section 9 */
 .mainsection9{
@@ -385,7 +392,7 @@
 .section9img img:hover{
     transform: scale(1.05);
 }
-.section9img img:visited{
+.section9img a:visited{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .maintype{
@@ -437,8 +444,9 @@
 .oculusimg img:hover{
     transform: scale(1.05);
 }
-.oculusimg img:active{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.oculusimg:visited{
+    box-shadow: rgba(0, 0, 0, 0.953) 0px 7px 29px 0px;
+    border-color: blue;
 }
 .memorypart select{
     width: 85px;
