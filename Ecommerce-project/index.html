@@ -260,16 +260,23 @@
                 <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
             </section>
             <section class="loginicon">
-                <i class="fa-solid fa-user fa-lg" style="color: #000000;"></i>
+                <i class="fa-solid fa-user fa-lg" style="color: #000000;" onclick="login()" id="user"></i>
+                <section class="login-container" id="login-container">
+                    <ul class="login-deatils">
+                        <li><i class="fa-solid fa-user fa-lg" style="color: #000000;"></i> My Profile</li>
+                        <li><i class="fa-solid fa-gear fa-lg"></i>Settings</li>
+                        <li><i class="fa-solid fa-bell fa-lg"></i>Notifications</li>
+                        <li><i class="fa-solid fa-arrow-right-to-bracket fa-lg"></i>Logout</li>
+                    </ul>
+                </section>
             </section>
+
+            <!-- Cart -->
             <section class="headercart">
                 <a href="#" onclick="opencart()"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i></a>
                 <section class="addcart" id="cartmenu">
-                    <h3>Cart</h3>
+                    <h3>Shopping Cart</h3>
                         <div class="subcart">
-                            <ul class="productsshow">
-
-                            </ul>
                         </div>
                     </div>
                 </section>        
@@ -279,17 +286,27 @@
 
     </header>
     <!-- section 2 -->
-    <section class="slideshow-container">
-        <section class="slide fade">
-            <img src="./Assets/images/banner-1.jpg" alt="banner-1">
+    <section class="slide-container">
+       <section class="slides">
+            <img class="slide active" src="./Assets/images/banner-1.jpg" alt="Image 1">
+            <img class="slide" src="./Assets/images/banner-2.jpg" alt="Image 2">
+            <img class="slide" src="./Assets/images/banner-3.jpg" alt="Image 3">
+           
+            <div class="content-image">
+                <h3>Effortlessly cool,for the tradinalists of today</h3>
+                <a href="#">EXPLORE COLLECTION</a>
+            </div>
+        </div>
+            <button class="prevbtn" onclick="backclick()"><i class="fa-solid fa-angle-up fa-rotate-270 fa-2xl"></i></button>
+            <button class="nextbtn" onclick="nextclick()"><i class="fa-solid fa-angle-up fa-rotate-90 fa-2xl"></i></button>
         </section>
-        <section class="slide fade">
-            <img src="./Assets/images/banner-2.jpg" alt="banner-2">
+        <!--Radio buttons-->
+        <section class="dot-container">
+            <div class="dot activedot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </section>
-        <section class="slide fade">
-            <img src="./Assets/images/banner-3.jpg" alt="banner-3">
         </section>
-    </section>
 
     <!-- section 3 -->
     <section class="mainsection3">
@@ -467,13 +484,15 @@
             <p>All-In-One VR
             <h2>Oculus VR</h2>
             </p>
-            <img src="./Assets/images/product-3.jpg" alt="section9-img">
+            <section id="displayimg">
+            <img id="productimg" src="./Assets/images/product-3.jpg" alt="section9-img">
+            </section>
             <section class="section9img">
-                <a href="#"><img src="./Assets/images/thunb-1.jpg" alt="section9-thunb1"></a>
-                <a href="#"><img src="./Assets/images/thunb-2.jpg" alt="section9-thunb2"></a>
-                <a href="#"><img src="./Assets/images/thunb-3.jpg" alt="section9-thunb3"></a>
-                <a href="#"><img src="./Assets/images/thunb-4.jpg" alt="section9-thunb4"></a>
-                <a href="#"><img src="./Assets/images/thunb-5.jpg" alt="section9-thunb5"></a>
+                <img onclick="changeimg('./Assets/images/product-3.jpg')" src="./Assets/images/thunb-1.jpg" alt="section9-thunb1">
+                <img onclick="changeimg('./Assets/images/subproduct-2.jpg')"  src="./Assets/images/thunb-2.jpg" alt="section9-thunb2">
+                <img onclick="changeimg('./Assets/images/subproduct-3.jpg')"  src="./Assets/images/thunb-3.jpg" alt="section9-thunb3">
+                <img onclick="changeimg('./Assets/images/subproduct-4.jpg')"  src="./Assets/images/thunb-4.jpg" alt="section9-thunb4">
+                <img onclick="changeimg('./Assets/images/subproduct-5.jpg')"  src="./Assets/images/thunb-5.jpg" alt="section9-thunb5">
             </section>
         </section>
         <section class="submain">
@@ -538,7 +557,7 @@
             </section>
 
         </section> <!--   Main section end-->
-    </section>
+    </section> 
     <!-- section 10 -->
     <section class="mainsection10">
         <section class="subsection10">
@@ -606,8 +625,8 @@
                 <p>Enter your email address</p>
                 <section class="footerinputype">
                     <input type="email" name="email" id="email" placeholder="user@email.com" />
-                    <section class="footerimg">
-                        <img src="./Assets/images/send.svg" alt="send">
+                    <section class="sendicon">
+                        <i class="fa-solid fa-paper-plane fa-lg" style="color: #ffffff;"></i>
                     </section>
                 </section>
             </section>
@@ -667,8 +686,8 @@
             </section>
         </section>
         <section class="copyrights">
-            <p>Made with<i class="fa-regular fa-copyright fa-2xs" style="color: #000000;"></i>Murali Pagadala.All rights
-                reserved</p>
+            <p>Made with <i class="fa-regular fa-copyright fa-2xs" style="color: #000000;"></i> Naveen Kumar Gudipati.All rights
+                reserved.</p>
         </section>
     </footer>
     <script src="./JS/Page-JS/index.js"></script>
