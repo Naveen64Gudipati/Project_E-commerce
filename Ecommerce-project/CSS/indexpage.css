@@ -3,7 +3,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-    
+}
+body{
+    margin: 0px;
+    padding: 0px;
 }
 .headersection,.mainsection3, .deatilsheadsection8, .mainsection10, .footersocialmedia  {
     display: flex;
@@ -23,10 +26,7 @@
     margin: 30px;
 }
 /* login */
-#user{
-    position: relative;
-    
-}
+
 .login-container{
     border: 5px solid black;
     width: 200px;
@@ -53,8 +53,12 @@
 }
 
 
-.headersearchall,.addcart,.deatilsheadsection8,.submainsection8,.section9img img, .quantitychecker .buttonsec, .submainsection2 button, .subsection10, .footerinputype {
+.headersearchall,.addcart,.deatilsheadsection8,.submainsection8,.section9img img, .quantitychecker .buttonsec, .pricesection button, .subsection10, .footerinputype {
     width: fit-content;
+}
+.headersearchall{
+    position: relative;
+    width: 675px;
 }
 .headersearchall select,.searchbar{
     margin-top: 15px;
@@ -63,7 +67,7 @@
     border-color:rgb(184, 184, 184);
     text-decoration: none;
 }
-.fa-magnifying-glass, .style,.addtocart,.submenusection, .FASHIONsubmenusection, .HEALTHHOUSEHOLDsubmenusection, .BAGESSHOESsubmenusection, .JEWELRYWATCHSsubmenusection, .BEAUTYHEALTHsubmenusection, .ELECTRONICSsubmenusection, .HOMEGARDENsubmenusection,.subsection4 img,.deatilssection7,.footerinputype input, footerimg  {
+ .style,.addtocart,.submenusection, .FASHIONsubmenusection, .HEALTHHOUSEHOLDsubmenusection, .BAGESSHOESsubmenusection, .JEWELRYWATCHSsubmenusection, .BEAUTYHEALTHsubmenusection, .ELECTRONICSsubmenusection, .HOMEGARDENsubmenusection,.subsection4 img,.deatilssection7,.footerinputype input, footerimg  {
     position: absolute;
 }
 .searchbar{
@@ -71,6 +75,8 @@
     position: relative;
     border-radius: 0px 5px 5px 0px;
     border-left:none;
+    position: absolute;
+    border: 1px solid;
     
 }
 .fa-magnifying-glass{
@@ -78,10 +84,10 @@
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    top: 23px;
-    left: 965px;
+    top: 15px;
+    left: 636px;
     height: 20px;
-    
+    position: absolute;
 }
 .sub-menu{
     display: none;
@@ -284,6 +290,7 @@
 
 
 /* section 3*/
+/* section 3*/
 .mainsection3{
     height: auto;
 }
@@ -305,7 +312,6 @@
 .subsection3 p{
     color: grey;
 }
-
 
 
 
@@ -387,11 +393,15 @@
 /* section 6 */
 .mainsection6{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    padding: 15px;
+    gap: 10px;
+}
+.mainsection6 img{
+    width: 100%;
 }
 .deatilssection6{
     background-color: rgba(244, 244, 244, 0.649);
-    margin: 30px;
     padding: 10px;
 }
 .button h3{
@@ -415,24 +425,18 @@
 /* section 7 */
 .mainsection7{
     position: relative;
-    margin: 20px 10px 20px 30px;
-    width: fit-content;
-}
-.imgsection7 img{
-    width: 1200px;
-    position: relative;
 }
 .deatilssection7{
     color: white;
-    width: 250px;
-    margin: auto;
+    width: 300px;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.695);
-    top: 200px;
-    left: 550px;
-    padding: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 30px;
     text-align: center;
     font-size: xx-large;
-    position: absolute;
 }
 .deatilssection7 a{
     font-size: large;
@@ -599,30 +603,31 @@
 }
 .quantitychecker button{
     border: none;
+    cursor: pointer;
 }
 .countrysection select{
     height: 30px;
     width: 150px;
 }
-.submainsection2 {
+.pricesection {
     margin-top: 80px;
 }
-.submainsection2 button{
+.pricesection button{
     color: white;
 }
-.submainsection2 .button1{
+.pricesection .button1{
     background-color: rgb(125, 11, 232);
 }
-.submainsection2 .button2{
+.pricesection .button2{
     background-color: rgb(221, 69, 120);
     margin-left: 20px;
 }
-.submainsection2 .button1, .submainsection2 .button2{
+.pricesection .button1, .pricesection .button2{
     padding: 5px 25px;
     border: none;
     border-radius: 5px;
 }
-.submainsection2 h3{
+.pricesection h3{
     display: inline-block;
     color: rgb(141, 139, 139);
 }
@@ -648,11 +653,10 @@
 
 /* section 11 */
 .mainsection11{
-    width: auto;
+    width: fit-content;
     text-align: center;
     display:flex;
-    margin-left: 50px
-    
+    margin-left: 50px;
 }
 .iconsection11{
     width: 90px;
@@ -749,5 +753,3 @@ footer{
 .copyrights{
     padding:80px 0px 80px 400px ;
 }
-
-

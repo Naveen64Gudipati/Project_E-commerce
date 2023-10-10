@@ -57,13 +57,10 @@ function opencart(){
 let counter_value=0
 let counter=document.getElementById("counter")
 function increment(){
-    if (counter_value>=5) {
-        counter=5;
-    }else{
-        counter_value++;
-    }counter.textContent=counter_value;
+    counter_value++;
+    counter.textContent=counter_value;
+    }
     
-}
 
 function decrement(){
     if (counter_value<=0) {

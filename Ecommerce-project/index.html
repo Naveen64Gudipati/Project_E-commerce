@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Assets/libiraries/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="./CSS/indexpage.css">
     <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./MediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -256,8 +257,9 @@
                     <option value="">option-2</option>
                     <option value="">option-3</option>
                     <option value="">option-4</option>
-                </select><input class="searchbar" type="search" name="search" id="search" placeholder="Search" />
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </select>
+                <input class="searchbar" type="search" name="search" id="search" placeholder="Search" />
+                <i id="magnifying-glass" class="fa-solid fa-magnifying-glass" style="color: #ffffff;"/></i>
             </section>
             <section class="loginicon">
                 <i class="fa-solid fa-user fa-lg" style="color: #000000;" onclick="login()" id="user"></i>
@@ -297,7 +299,7 @@
                 <a href="#">EXPLORE COLLECTION</a>
             </div>
         </div>
-            <button class="prevbtn" onclick="backclick()"><i class="fa-solid fa-angle-up fa-rotate-270 fa-2xl"></i></button>
+            <button id="nextid" class="prevbtn" onclick="backclick()"><i class="fa-solid fa-angle-up fa-rotate-270 fa-2xl"></i></button>
             <button class="nextbtn" onclick="nextclick()"><i class="fa-solid fa-angle-up fa-rotate-90 fa-2xl"></i></button>
         </section>
         <!--Radio buttons-->
@@ -313,19 +315,19 @@
         <section class="subsection3">
             <i class="fa-solid fa-truck-fast fa-2xl" style="color: #062d6f;"></i>
             <h3>Two-hours delivery</h3>
-            <p>Available in most metros on seletced in-stock <br> products</p>
+            <p>Available in most metros on seletced in-stock products</p>
             <a href="#">LEARN MORE</a>
         </section>
         <section class="subsection3">
             <i class="fa-solid fa-message fa-2xl" style="color: #0c2755;"></i>
             <h3>Get help buying</h3>
-            <p>Have a question?Call a Specialist or chat online <br> for help</p>
+            <p>Have a question?Call a Specialist or chat online for help</p>
             <a href="#">CONTACT US</a>
         </section>
         <section class="subsection3">
             <i class="fa-solid fa-ticket fa-2xl" style="color: #01225b;"></i>
             <h3>Find the card for you</h3>
-            <p>Get 3% daily cash with special financing offers <br> from us</p>
+            <p>Get 3% daily cash with special financing offers from us</p>
             <a href="#">LEARN MORE</a>
         </section>
     </section>
@@ -367,9 +369,7 @@
     <!-- section 6 -->
     <section class="mainsection6">
         <section class="submainsection">
-            <section class="imgsection6">
-                <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
-            </section>
+            <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
             <section class="deatilssection6" id="culusQuest">
                 <h2>Oculus Quest</h2>
                 <p>All in one gaming headset with lightweight, flexible design</p>
@@ -381,9 +381,7 @@
         </section>
 
         <section class="submainsection">
-            <section class="imgsection6">
-                <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
-            </section>
+            <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
             <section class="deatilssection6">
                 <h2>Oculus Quest</h2>
                 <p>All in one gaming headset with lightweight, flexible design</p>
@@ -394,9 +392,7 @@
             </section>
         </section>
         <section class="submainsection">
-            <section class="imgsection6">
-                <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
-            </section>
+            <img src="./Assets/images/product-2.jpg" alt="product2sec6" />
             <section class="deatilssection6">
                 <h2>Oculus Quest</h2>
                 <p>All in one gaming headset with lightweight, flexible design</p>
@@ -411,7 +407,7 @@
     <!-- section 7 -->
     <section class="mainsection7">
         <section class="imgsection7">
-            <img src="./Assets/images/content-4.jpg" alt="content-4">
+        <img src="./Assets/images/content-4.jpg" alt="content-4">
             <section class="deatilssection7">
                 <h1>THE PRIME <br>AMBASSADOR</h1>
                 <a href="#">EXPLORE COLLECTION</a>
@@ -549,7 +545,7 @@
                 </section>
             </section>
 
-            <section class="submainsection2">
+            <section class="pricesection">
                 <p>Price:</p>
                 <h2>$ 149 USD </h2>
                 <h3><Strike>$ 179 USD</Strike></h3><br>
