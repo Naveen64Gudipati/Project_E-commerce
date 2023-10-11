@@ -1,6 +1,6 @@
 
 /* Large Screens */
-@media (min-width:1024) and (max-width: 1280px) {
+@media all and (min-width: 1280px) {
     *{
         font-family: 'Montserrat', sans-serif;
         font-family: 'Open Sans', sans-serif;
@@ -10,6 +10,7 @@
     body{
         margin: 0px;
         padding: 0px;
+        border: 2px solid rgb(78, 31, 31);
     }
     .mainsection3, .deatilsheadsection8, .mainsection10, .footersocialmedia  {
         display: flex;
@@ -75,7 +76,7 @@
         position: absolute;
     }
     .searchbar{
-        width: 600px;
+        width: 700px;
         position: relative;
         border-radius: 0px 5px 5px 0px;
         border-left:none;
@@ -89,9 +90,12 @@
         padding: 10px;
         border-radius: 5px;
         top: 15px;
-        left: 636px;
+        left: 736px;
         height: 20px;
         position: absolute;
+    }
+    #user{
+        margin-left: 150px;
     }
     .sub-menu{
         display: none;
@@ -207,7 +211,7 @@
     }
     .slides{
         height:400px;
-        width: 1230px;
+        width: 100%;
         display: flex;
         position: relative;
     
@@ -366,11 +370,12 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         background-color: rgb(234, 234, 234);
-        height: 505px;
+        height: 100%;
         margin-top: 50px;
         margin-left: 20px;
-        max-width: 1200px;
+        width: 100%;
         align-content: center;
+        border: 1px solid blue;
     }
     .subsection5 img{
         height: 500px;
@@ -378,6 +383,8 @@
     }
     .deatilssection5{
         padding-top: 100px;
+        width: 100%;
+        border: 2px solid black;
     }
     .deatilssection5 h2{
         font-size: xx-large;
@@ -425,6 +432,10 @@
     .mainsection7{
         position: relative;
     }
+    .imgsection7 img{
+        width: 100%;
+        height: 100%;
+    }
     .deatilssection7{
         color: white;
         width: 300px;
@@ -446,7 +457,7 @@
     /* section 8 */
     .mainsection8{
         display: inline-block;
-        margin: 70px 0px 10px 100px;
+        margin: 70px 0px 10px 150px;
     }
     .deatilsheadsection8{
         justify-content: space-between;
@@ -470,7 +481,8 @@
     .submainsection8{
         float: left;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        margin-left: 20px;
+        padding: auto;
+        margin-left: 60px;
         border-radius: 5px;
     }
     .submainsection8 img{
@@ -505,7 +517,7 @@
     .mainsection9{
         background-color: whitesmoke;
         padding: 100px 0px 60px 0px;
-        margin-top: 90px;
+        margin-top: 100px;
     }
     .maintop{
         text-align: center;
@@ -639,7 +651,7 @@
         text-align: center;
         background-color: white;
         padding-top: 30px;
-        margin: 90px 10px 50px 20px;  
+        margin: 90px 10px 50px 50px;  
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .subsection10 h2{
@@ -655,7 +667,7 @@
         width: fit-content;
         text-align: center;
         display:flex;
-        margin-left: 50px;
+        margin-left: 60px;
     }
     .iconsection11{
         width: 90px;
@@ -671,7 +683,7 @@
         width: 250px;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin:0px 0px 50px 30px ;
+        margin:0px 0px 50px 50px ;
     
     }
     
@@ -855,7 +867,7 @@
         z-index: 1;
     }
     #user{
-        margin-left: -60px;
+        margin-left: -10px;
     }
     .baricon{
         position: relative;
@@ -1203,7 +1215,7 @@
         font-size: large;
     }
     .imgsection7 img{
-        width: 1100px;
+        width: 1010px;
     }
     .deatilssection7 a{
         font-size: large;
@@ -3181,7 +3193,7 @@
         font-weight: lighter;
     }
     .copyrights{
-        padding:10px 0px 40px 30px ;
+        padding:10px 0px 40px 100px ;
         width: fit-content;
     }
 }
