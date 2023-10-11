@@ -38,7 +38,7 @@ function nextclick() {
 let prevbutton=0
 function backclick() {
     slide[prevbutton].classList.remove("active");
-    prevbutton = (prevbutton - 3 ) % slide.length;
+    prevbutton = (prevbutton + 1 ) % slide.length; 
     slide[prevbutton].classList.add("active");
 
 }

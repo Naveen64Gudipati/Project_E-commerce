@@ -8,10 +8,11 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.headersection,.mainsection3, .deatilsheadsection8, .mainsection10, .footersocialmedia  {
+.mainsection3, .deatilsheadsection8, .mainsection10, .footersocialmedia  {
     display: flex;
 }
 .headersection{
+    display: flex;
     margin-left: 120px;
 }
 .headerimg img{
@@ -241,7 +242,7 @@ body{
 .slide{
     display: none;
 }
-.slide img{
+.slide{
     height: 100%;
     width: 100%;
     position: absolute;
