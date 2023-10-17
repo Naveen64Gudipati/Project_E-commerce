@@ -17,11 +17,12 @@
     }
     .headersection{
         display: flex;
-        margin-left: 120px;
+        margin-left: 25px;
     }
     .headerimg img{
         height: 70px;
         width: 120px;
+        margin-top: 5px;
     }
     
     .headersection i{
@@ -126,7 +127,7 @@
         height: 320px;
         background-color: white;
         display: block;
-        margin-left: -30px;
+        margin-left: -50px;
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -326,6 +327,8 @@
         justify-items: center;
         align-items: center;
         padding: 50px 0px 0px 40px;
+        margin-left: 100px;
+        
     }
     .subsection4{
         border: px solid black;
@@ -350,7 +353,7 @@
         
     }
     .subsect{
-        margin-left: -450px;
+        margin-left: -350px;
     }
     .subsection4 button{
         background-color:rgb(221, 69, 120);
@@ -375,7 +378,6 @@
         margin-left: 20px;
         width: 100%;
         align-content: center;
-        border: 1px solid blue;
     }
     .subsection5 img{
         height: 500px;
@@ -384,7 +386,6 @@
     .deatilssection5{
         padding-top: 100px;
         width: 100%;
-        border: 2px solid black;
     }
     .deatilssection5 h2{
         font-size: xx-large;
@@ -457,7 +458,7 @@
     /* section 8 */
     .mainsection8{
         display: inline-block;
-        margin: 70px 0px 10px 150px;
+        margin: 70px 0px 10px 50px;
     }
     .deatilsheadsection8{
         justify-content: space-between;
@@ -645,13 +646,13 @@
     
     /* section 10 */
     .mainsection10{
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .subsection10{
         text-align: center;
         background-color: white;
         padding-top: 30px;
-        margin: 90px 10px 50px 50px;  
+        margin: 90px 10px 50px 40px;  
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .subsection10 h2{
@@ -667,7 +668,7 @@
         width: fit-content;
         text-align: center;
         display:flex;
-        margin-left: 60px;
+        margin-left: 5px;
     }
     .iconsection11{
         width: 90px;

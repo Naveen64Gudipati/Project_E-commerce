@@ -17,14 +17,13 @@ function login(){
  }
  setInterval(imageSlide, 4000);
  //dots
- let count=0
+ let count=0;
  function dotmove() {
     dots[count].classList.remove("activedot");
     count = (count + 1) % dots.length;
     dots[count].classList.add("activedot");
 }
 setInterval(dotmove, 4000);
-
 //next button
 let button=0;
 function nextclick() {
@@ -33,7 +32,6 @@ function nextclick() {
     slide[button].classList.add("active");
    
 }
-
 //prev button
 let prevbutton=0
 function backclick() {
